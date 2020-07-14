@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Landing</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/spectre.css/dist/spectre.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  <link rel="stylesheet" href="styles.7216ac2fb1a5360c6c29.css"></head>
+  <body>
+    <app-root></app-root>
+
+    <script>
+      var animateHTML = function () {
+        var elems, windowHeight;
+
+        var init = function () {
+          elems = document.getElementsByClassName("hidden");
+          windowHeight = window.innerHeight;
+          _addEventHandlers();
+        };
+
+        var _addEventHandlers = function () {
+          window.addEventListener("scroll", _checkPosition);
+          window.addEventListener("resize", init);
+        };
+        var _checkPosition = function () {
+          for (var i = 0; i < elems.length; i++) {
+            var posFromTop = elems[i].getBoundingClientRect().top;
+            if (posFromTop - windowHeight <= 0) {
+              elems[i].className = elems[i].className.replace(
+                "hidden",
+                "fade-in"
+              );
+            }
+          }
+        };
+
+        return {
+          init: init,
+        };
+      };
+
+      animateHTML().init();
+
+      window.onload = function () {
+        var menu = document.querySelector(".hamburger");
+
+        // method
+        function toggleMenu(event) {
+          this.classList.toggle("is-active");
+          document.querySelector(".menuppal").classList.toggle("is_active");
+          event.preventDefault();
+        }
+
+        // event
+        menu.addEventListener("click", toggleMenu, false);
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+              behavior: "smooth",
+            });
+          }); 
+        });
+      };
+    </script>
+  <script src="runtime.e227d1a0e31cbccbf8ec.js" defer></script><script src="polyfills.a4021de53358bb0fec14.js" defer></script><script src="scripts.17e7d20a938ccc5fdfa4.js" defer></script><script src="main.1c8a3784c9d62767d497.js" defer></script></body>
+</html>
