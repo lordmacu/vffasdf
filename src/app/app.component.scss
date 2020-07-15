@@ -8,6 +8,13 @@
   }
 }
 
+.contactContainer{
+  p{
+    font-size: 0.76rem !important;
+    line-height: 1.04rem !important;
+  }
+}
+
 .menuMobile{
   position: absolute;
   right: 10px !important;
@@ -336,7 +343,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f3fc', end
     padding-bottom: 30px;
     @media only screen and (max-width: 600px) {
    margin-bottom: 40px;
-   padding: 0px;
+   padding: 25px;
 
     }
 
