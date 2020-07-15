@@ -31,10 +31,18 @@ body {
 
           
 
+.slick-arrow i{
+  font-size: 1.5rem;
+}
+
+.slick-arrow{
+  top: -10px;
+}
+
 
 
 .slick-slide img{
-    width: 180px;
+    width: 150px;
 }
 
 .slick-slide {
@@ -322,4 +330,9 @@ ol {
   top: 67px;  
   right: 0;
   cursor: pointer;
+}
+
+.slick-list{
+  padding-left: 40px !important;
+    padding-right: 40px !important;
 }
