@@ -575,9 +575,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f3fc', end
 
   .columnInformation {
     margin-bottom: 120px;
-.rightAlign{
-  text-align: right;
-}
+    h3{
+      text-align: right;
+
+    }
 
     @media only screen and (max-width: 600px) {
         img{
