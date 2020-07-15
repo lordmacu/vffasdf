@@ -73,12 +73,12 @@ body {
 
 @media only screen and (max-width: 375px) {
   .slick-slide img{
-    width: 300px
+    width: 225px
 }
 
 
 .slick-slide {
-    width: 300px;
+    width: 360px;
 }
 }
 
