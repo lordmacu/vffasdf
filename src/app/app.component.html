@@ -65,36 +65,36 @@
 <div class="heroSlider "  name="inicio" id="inicio">
  <div class="container">
   <div class="columns">
-    <a class="fancy"  data-fancybox-type="iframe" href="https://www.youtube.com/embed/nXSgXzqdGCo?autoplay=1"> 
+    <a class="fancy stepFour"  data-fancybox-type="iframe" href="https://www.youtube.com/embed/nXSgXzqdGCo?autoplay=1"> 
       <img src="/assets/play.png" width="30" class="play"/>
       </a>
     <div class="col-5 col-xs-12">
-      <h1>Tu consultorio</h1>
-      <h2>portátil</h2> 
-      <p>
+      <h1 class="stepOne">Tu consultorio</h1>
+      <h2 class="stepTwo">portátil</h2> 
+      <p class="stepThree">
         Gestiona la información de tus pacientes y la de tu clínica de manera
         <span>simple, ágil y segura.</span>
       </p>
       <div class="columns">
-        <div class="column col-3 containerHeroImage">
+        <div class="column col-3 containerHeroImage stepOne">
           <img
             src="/assets/iconfinder_medical-healthcare-hospital-32_4082081.png"
           />
           <p>En cualquier lugar</p>
         </div>
-        <div class="column col-3 containerHeroImage">
+        <div class="column col-3 containerHeroImage stepTwo">
           <img
             src="/assets/iconfinder_medical-healthcare-hospital-48_4082065.png"
           />
           <p>Hecho a tu medida</p>
         </div>
-        <div class="column col-3 containerHeroImage">
+        <div class="column col-3 containerHeroImage stepThree">
           <img
             src="/assets/iconfinder_medical-healthcare-hospital-25_4082088-1.png"
           />
           <p>En cualquier dispositivo</p>
         </div>
-        <div class="column col-3 containerHeroImage">
+        <div class="column col-3 containerHeroImage stepFour">
           <img
             src="/assets/iconfinder_medical-healthcare-hospital-26_4082087.png"
           />
@@ -102,7 +102,7 @@
         </div>
       </div>
     </div>
-    <div class="col-7 col-xs-12 bannerImage">
+    <div class="col-7 col-xs-12 bannerImage stepOne">
       <img src="/assets/banner-images.png" />
     </div>
   </div>
@@ -598,11 +598,11 @@
         </h4>
 
         <ul>
-          <li>DeCOVIDficación</li>
-          <li>Transformación Medica</li>
-          <li>Tu Consulta, tu empresa</li>
-          <li>Magazine</li>
-          <li>Podcast</li>
+          <li> <a href="https://pegasi.io/blog/?category=magazine" class="btn btn-link">Magazine</a></li>
+          <li><a href="https://pegasi.io/blog/?category=tu-empresa" class="btn btn-link">Tu Consulta, tu empresa</a></li>
+          <li><a href="https://pegasi.io/blog/?category=futurology-review" class="btn btn-link">Transformación-medica</a></li>
+          <li><a href="https://pegasi.io/blog/?category=futurology-review-decovidficacion" class="btn btn-link">DeCOVIDficación</a></li>          
+          
         </ul>
       </div>
 
@@ -612,7 +612,7 @@
         </h4>
 
         <ul>
-          <li>Sobre Pegasi</li>
+          <li><a href="https://nosotros.pegasi.io/">Sobre Pegasi</a></li>
         </ul>
       </div>
 
@@ -625,7 +625,7 @@
               height="15"
               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAAG7AAABuwE67OPiAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAARpQTFRF////bZLb222S6urqO3bE2DtOc5nM2XOAe6HQ43uOUoXI3FJq7+/v7+/vSoPH30pk8PDwUIfI4VBo7+/vTIXG3kxnRH7E3kRgV4vJ31dwRH/F30Rg8PDwP3vE3j9c8PDwX5HM4V92NnbC3jZVOXfC3jlW8PDwI2m93CNE8PDwEV252hE2E1+42hM2Dlu42Q4yAFK0AVKzAVO0BVW1GWGuHEeiJmu9KUOZKm2+Km6/SW4tSm8vTHExT2ktT2otUGktUojIZINMZVgsZoVPdJ7Pd6DSgEQrhz8qiKzWlRlTl7K+nK6Nni0ppicpqsDTrCIpwdHkxBAoxQ4ox9DBz9fK2AAn3ePl4FJs5ent5oiZ6Orn6uzv7O3r8PDwHzWxMgAAADB0Uk5TAAcHDA0NFBQ2NkFBTnB/f4qQkKSrq7CwsrK1tb7T09jc3Ofn7e3y9vb4+/v9/f7+OJH5YQAAApRJREFUWMOl19dWIkEQANBSUJCs5CBBybGMq4WrIGbM0Eb8/9/YB5iVwa5hpq0nzumuCx3pAmDC5vEGgqlMsZhJBQNejw0shSuRrXzpopJLus1mL8dKiJ2vmXgVohx3mEi3h+qIckCIRnhpXv5qFZEHhKitGaY784jGgBCFFT7f18T5gGj5ufwIohlAiKg0fWEdzQIivSjJ30DzgNj8Kei+fy4g0kbjNwPMzoMPrQJCtxbOpnWgNb0f8mgdEIWp/YsqgPi/q+1VNaCmnawQqgEiPDn/dVWgMb4fYqgKiDgAAJTUgTIAgAvVAeEGgMRvgCQAZDuyuBqnvd3fv40/vb/KIgdgq3xx8Xm+v424vX/+yXap2MDDNj4eauM5fGQ7ecDL5u98z8gOK3ghwP3+A9z7M4k9POBGEYAg03KGeK3N9TXiGdMtCCmmZVcP7DLdUpCRN7xs6YGtF3m/DBTlDTeoB/BG3q/IAQMietCAByIacAAzhI820a0G3BK1P7ghcJPYJbrQgAuiLjuJ3DL2iY6fxvlPx0R9dhm5jTTqEZ0+CyHE8ylRb8RuJHYrD4+ITi7v7i7/Eh0N+a3MH6ZhjybRGxocJoPjPOp320Ttbn9kdJwhJ70p3ierORhM1u9Keu9kASApvateZ7+rI735EgDg/g3gAgAoqwMlAACIqwMxAABwNFSB+vL4zzGsCoQm/85LNTWgatceCGtqwOr3E6WgAuSn3kgrLetA0zn9TPNbB3z6h2LUKhCZfaqmrQHrP97Ki5tWgI2Fn8/1xbR5YH1BWjFEzQIRrmTxt8wATR9fNK0U5gN5p2HdtlYzBqqr8wrHpXCDB+ohu4na1REvy4FSbNls+exO5maL72zCZa2AN1v+/wPNdteMTMn46gAAAABJRU5ErkJggg=="
             />
-            Rep. Dominicana <br/>Calle Moisés García # 5, Edificio Le Residence. Santo Domingo.
+            República Dominicana <br/>Calle Moisés García # 5, Edificio Le Residence. Santo Domingo.
           </p>
           <p>
             <img
