@@ -38,12 +38,12 @@ export class AppComponent {
     
   ];
 
- 
+  
   slideConfig = {
     "slidesToShow": 4,
     "slidesToScroll": 1,
-    "nextArrow": "<div class='nav-btn next-slide'></div>",
-    "prevArrow": "<div class='nav-btn prev-slide'></div>",
+    "nextArrow": "<div class='nav-btn next-slide'><i class='icon icon-arrow-right'></i></div>",
+    "prevArrow": "<div class='nav-btn prev-slide'><i class='icon icon-arrow-left'></i></div>",
     "dots": false,
     "infinite": true,
     "autoplay": true,
