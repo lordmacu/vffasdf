@@ -47,7 +47,7 @@ export class AppComponent {
     "dots": false,
     "infinite": true,
     "autoplay": true,
-    variableWidth: true,
+     variableWidth: true,
 
     "autoplaySpeed": 2000 
   };
@@ -59,6 +59,7 @@ export class AppComponent {
       type: "iframe",
     });
   }
+
   
    
 
