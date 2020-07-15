@@ -49,7 +49,7 @@ export class AppComponent {
     "autoplay": true,
     variableWidth: true,
 
-    "autoplaySpeed": 2000
+    "autoplaySpeed": 2000 
   };
 
   constructor() { }
