@@ -27,13 +27,64 @@ body {
     outline:0px !important
 }
 
+          
+
+
+
 .slick-slide img{
-    width: 170px;
+    width: 180px;
 }
 
 .slick-slide {
-    width: 200px;
+    width: 225px;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .slick-slide img{
+    width: 350px
+}
+
+.slick-slide {
+    width: 350px;
+}
+}
+
+
+@media only screen and (max-width: 411px) {
+  .slick-slide img{
+    width: 320px
+}
+
+.slick-slide {
+    width: 320px;
+}
+}
+
+@media only screen and (max-width: 375px) {
+  .slick-slide img{
+    width: 300px
+}
+
+
+.slick-slide {
+    width: 300px;
+}
+}
+
+@media only screen and (max-width: 1024) {
+  .slick-slide img{
+    width: 380px
+}
+
+
+.slick-slide {
+    width: 380px;
+}
+}
+
+
+    width: 300px
 
 
 .vc_sep_line {
