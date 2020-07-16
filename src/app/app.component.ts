@@ -38,7 +38,7 @@ export class AppComponent {
     
   ];
 
-  
+    
   slideConfig = {
     "slidesToShow": 4,
     "slidesToScroll": 1,
