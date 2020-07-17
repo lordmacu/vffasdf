@@ -140,7 +140,7 @@ class AppComponent {
             // http.post is a wrapper for AJAX
             this.httpClient.post(url, param).subscribe(response => {
                 console.log(response);
-                sweetalert2_dist_sweetalert2_js__WEBPACK_IMPORTED_MODULE_1___default.a.fire('Gracias por enviar tu solicitud', 'un especialista estará contactándote en brevedad.', 'success');
+                sweetalert2_dist_sweetalert2_js__WEBPACK_IMPORTED_MODULE_1___default.a.fire('¡Gracias por enviar tu solicitud!', 'Un especialista estará contactándote en brevedad.', 'success');
                 document.getElementById("contactForm").reset();
             });
             event.preventDefault();
