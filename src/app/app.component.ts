@@ -98,7 +98,7 @@ export class AppComponent {
         // http.post is a wrapper for AJAX
         this.httpClient.post(url , param).subscribe(response => {
           console.log(response);
-          Swal.fire('Gracias por enviar tu solicitud', 'un especialista estará contactándote en brevedad.', 'success');
+          Swal.fire('¡Gracias por enviar tu solicitud!', 'Un especialista estará contactándote en brevedad.', 'success');
 
          
           (<HTMLFormElement>document.getElementById("contactForm")).reset();
