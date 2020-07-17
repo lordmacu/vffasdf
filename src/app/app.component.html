@@ -493,8 +493,11 @@
       <h3>
         ¡Déjanos tus datos y nosotros te contactamos!
       </h3>
+       
 
-      <form>
+
+      <div  [hidden]="!sendForm"> Se ha enviado con éxito</div>
+      <form (submit)="submitToHubSpot($event)" id="contactForm" >
         <div class="form-group">
           <label class="form-label" for="name">Nombre</label>
           <input
@@ -502,7 +505,7 @@
             type="text"
             id="name"
             name="name"
-            placeholder="Ingresa tu nombre"
+             placeholder="Ingresa tu nombre"
           />
         </div>
         <div class="form-group">
@@ -511,7 +514,7 @@
             class="form-input"
             type="text"
             id="lastname"
-            name="lastname"
+             name="lastname"
             placeholder="Ingresa tu apellido"
           />
         </div>
@@ -523,7 +526,7 @@
             type="email"
             id="email"
             name="email"
-            placeholder="Ingresa tu correo"
+             placeholder="Ingresa tu correo"
           />
         </div>
 
@@ -531,13 +534,14 @@
           <label class="form-label" for="input-example-1">Mensaje</label>
           <textarea
             class="form-input"
-            placeholder="Ingresa tu mensaje"
+             placeholder="Ingresa tu mensaje"
+             name="message"
           ></textarea>
         </div>
 
         <div class="form-group">
-          <button class="button_action">Enviar</button>
-        </div>
+          <button type="submit" class="button_action">Enviar</button>
+         </div>
       </form>
     </div>
     <div class="col-6 col-xs-12 containerImageContactUs">

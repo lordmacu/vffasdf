@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { HttpClientModule } from '@angular/common/http';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
 @NgModule({
   
@@ -12,7 +14,9 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
   ],
   imports: [
     BrowserModule,
-    SlickCarouselModule 
+    SlickCarouselModule ,
+    HttpClientModule,
+    SweetAlert2Module.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

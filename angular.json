@@ -27,7 +27,9 @@
               "src/styles.css",
               "node_modules/slick-carousel/slick/slick.scss",
               "node_modules/slick-carousel/slick/slick-theme.scss",
-              "./node_modules/fancybox/dist/css/jquery.fancybox.css"
+              "./node_modules/fancybox/dist/css/jquery.fancybox.css",
+              "node_modules/sweetalert2/src/sweetalert2.scss"
+
 
             ],
             "scripts": [
@@ -97,8 +99,9 @@
               "src/assets",
               "src/blog"
             ],
-            "styles": [
-              "src/styles.css"
+            "styles": [ 
+              "src/styles.css",
+              "node_modules/sweetalert2/src/sweetalert2.scss"
             ],
             "scripts": []
           }

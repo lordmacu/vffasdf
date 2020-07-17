@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
-declare var $: any;
+import { HttpClient } from '@angular/common/http';
+import Swal from 'sweetalert2/dist/sweetalert2.js';
 
+declare var $: any;
+var hbspt: any 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -38,6 +41,7 @@ export class AppComponent {
     
   ];
 
+  sendForm=false;
     
   slideConfig = {
     "slidesToShow": 4,
@@ -52,14 +56,59 @@ export class AppComponent {
     "autoplaySpeed": 2000 
   };
 
-  constructor() { }
+  constructor(private httpClient: HttpClient) { }
+
+  ngAfterViewInit() {
+    
+    
+    
+
+  }
 
   ngOnInit() {
   	$(".fancy").fancybox({
       type: "iframe",
     });
+ 
   }
 
+ submitToHubSpot = (event) => {
+ console.log("aqui lo estoy enviando ");
+        let url: string = "https://api.hsforms.com/submissions/v3/integration/submit/5922407/67ea2165-b2ed-44e9-b81b-b74cb629217b";
+        var param: any = {
+            fields: [
+                {
+                    "name": "email",
+                    "value": event.target.email.value
+                },
+                {
+                    "name": "firstname",
+                    "value": event.target.name.value
+                },
+                {
+                    "name": "lastname",
+                    "value":  event.target.lastname.value
+                },
+                {
+                    "name": "message",
+                    "value":  event.target.message.value
+                } 
+            ]
+        } 
+        // http.post is a wrapper for AJAX
+        this.httpClient.post(url , param).subscribe(response => {
+          console.log(response);
+          Swal.fire('Gracias por enviar tu mensaje', 'Se ha enviado tu mensaje con éxito', 'success');
+
+         
+          (<HTMLFormElement>document.getElementById("contactForm")).reset();
+
+         })
+      
+        event.preventDefault();
+
+    }
+    
   
    
 
